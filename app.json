@@ -4,7 +4,7 @@
     "slug": "foodapp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/coffee-icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,7 +13,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/coffee-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
@@ -27,15 +27,24 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "image": "./assets/images/coffee-splash.png",
+          // "imageWidth": 200,
+          "resizeMode": "cover",
+          "backgroundColor": "#000000"
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "47ad52ff-7a5a-410f-99ae-7c60d7ae2b69"
+      }
+    },
+    "owner": "saksham_behal"
   }
 }
