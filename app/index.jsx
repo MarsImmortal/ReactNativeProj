@@ -14,12 +14,21 @@ const app = () => {
       resizeMode='cover'
       style = {styles.image}
       >
-      <Text style = {styles.title}>Coffee shop</Text>
+      <Text style = {styles.title}> Indian Tiffin Service</Text>
       <Link href="/contact" style = {{marginHorizontal: 'auto'}} 
       asChild>
       <Pressable style = {styles.button}>
         <Text style = {styles.buttonText}>
           contact us
+        </Text>
+      </Pressable>
+      </Link>
+
+      <Link href="/menu" style = {{marginHorizontal: 'auto'}} 
+      asChild>
+      <Pressable style = {styles.button}>
+        <Text style = {styles.buttonText}>
+          Menu
         </Text>
       </Pressable>
       </Link>
@@ -65,6 +74,8 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     backgroundColor:'rgba(0,0,0,0.75)',
     padding: 6,
+    marginBottom: 50,
+    width: 150,
   },
   buttonText:{
     color: 'white',
